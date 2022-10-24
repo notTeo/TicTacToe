@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game{
+    min-width: 40vh;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    background-color: rgb(71, 91, 148);
+    border: 2px #000 solid;
+}
+.ticTacToe{
+    margin: 20px;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.tittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.turn{
+    display: flex;
+}
+.turn h4{
+    padding: 5px;
+}
+
+.box{
+    border: 2px #000 solid;
+    border-radius: 15px;
+    background: #eee;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px #000 solid;
+    border-radius: 5px;
+    background-color: rgb(189, 92, 92);
+}

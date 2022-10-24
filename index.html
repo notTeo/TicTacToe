@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game">
+        <div class="tittle">
+            <div class="gameName"><h3>Tic Tac Toe</h3></div>
+            <div class="turn">
+                <h4 id="turn">X</h4>
+                <h4>Turn</h4>
+            </div>
+        </div>
+        <div class="ticTacToe">
+            <button id="1" class="box" value="top-left-corner" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="2" class="box" value="top-middle" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="3" class="box" value="top-right-corner" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="4" class="box" value="middle-left" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="5" class="box" value="middle" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="6" class="box" value="middle-right" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="7" class="box" value="bottom-left-corner" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="8" class="box" value="bottom-middle" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+            <button id="9" class="box" value="bottom-right-corner" onclick="giveValue(this.innerHTML, this, this.value)"></button>
+        </div>
+        <button class="resButton" onclick="resetButton()">Reset</button>
+    </div>
+    
+    <script src="/app.js"></script>
+</body>
+</html>
